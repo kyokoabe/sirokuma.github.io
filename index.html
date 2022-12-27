@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <title>Works</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <div class="header-area">
+      <h1>しろくま探索記録</h1>
+
+        <!--ハンバーガーメニュー-->
+        <div class="hamburger">
+          <!-- ハンバーガーメニューの線 -->
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- /ハンバーガーメニューの線 -->
+        </div>
+      </div>
+      <ul class="slide-menu">
+        <li><a href="#TOP">TOP</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#kuma">KUMA</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </header>
+
+<section id="TOP">
+<div class="top-body">
+  <h1>しろくま見つけました</h1>
+  <div class="main-content">
+      <img src="img/kuma1.png" alt="くま">
+  </div>
+</div>
+</section>
+<section id="about">
+    <h1 class="about-title">ABOUT</h1>
+    <div class="about-body">
+        <div class="about-box">
+            <div class="about-img"><img src="img/kuma2.png" alt="お出かけくま" ></div>
+　　　　　　　<div class="about-box-text">
+                <p>
+                    このサイトは我々が発見した世界中のしろくまの記録をまとめたサイトです。<br>
+                    世界中探してますが身近なところにいることの方が多いです。<br>
+                    見つけた際に捕獲し記録を残しています。<br>
+                    我々と一緒にしろくまを探しましょう.<br>
+                    しろくまを発見した際は目を離さずに後ろに下がりながら逃げるのが
+                    得策です。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="kuma">
+  <h1 class="kuma-title">KUMA</h1>
+  <div class="wrapper-grid">
+    <div class="item">
+      <img src="img/kuma3.png" alt="">
+      <p>デフォルトタイプ<br>
+      名称：さとし<br>
+    詳細：コンビニで捕獲。アイスが好き</p>
+    </div>
+    <div class="item">
+      <img src="img/kuma4.png" alt="">
+      <p>小型タイプ<br>
+      名称：つよし<br>
+     詳細:新宿駅で迷子のところを捕獲。大食い。</p>
+    </div>
+    <div class="item">
+      <img src="img/kuma5.png" alt="">
+      <p>大型タイプ<br>
+      名称：むさし<br>
+    詳細：住宅街の路地で捕獲。壁と壁の隙間に挟まっていた。</p>
+    </div>
+    <div class="item">
+      <img src="img/kuma6.png" alt="">
+      <p>たにし<br>
+      名称：たにし<br>
+    詳細：何もわからない</p>
+    </div>
+    <div class="item">
+      <img src="img/kuma7.png" alt="">
+      <p>たにし</p>
+    </div>
+    <div class="item">
+      <img src="img/kuma8.png" alt="">
+      <p>たにし</p>
+    </div>
+  </div>
+
+</section>
+<section id="contact">
+  <h1 class="contact-title">CONTACT</h1>
+  <p>しろくまを発見した際は下記フォームにご記入のうえご報告ください。</p>
+  <form action="#">
+    <div>
+      <lavel for="name">お名前</lavel><br>
+      <input type="text" id="name" name="your-name">
+     </div>
+     <div>
+       <lavel for="email">メールアドレス</lavel>
+       <input type="email" id="email" name="your-email">
+     </div>
+     <div>
+       <lavel for="message">メッセージ</lavel>
+       <textarea id="message" name=""></textarea>
+     </div>
+     <input type="submit" class="button" value="送信">
+   </form>
+
+</section>
+
+<footer>
+  <div class="footer">
+    <p><small>&copy;2023 sirokuma</small></p>
+  </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
