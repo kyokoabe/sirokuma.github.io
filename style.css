@@ -1,0 +1,195 @@
+@charset "UTF-8";
+html{font-size:100%;}
+body{font-family:"Yu Gothic Medium","游ゴシック　Medium",YuGothic,"ヒラギノ角ゴ　Pro W3",sans-serif;
+     line-height:1.7;
+     color:#432;}
+
+     body{
+       overflow-x: hidden;
+       background-color: #7acbe1;
+     }
+     .header-area{
+       display: flex;
+       justify-content: space-between;
+       height: 65px;
+       padding: 0 20px;
+       align-items: center;
+       text-align: center;
+     }
+
+     .header-area h1{color:#fff;
+       font-size: 60px;
+     margin: auto;}
+
+     .hamburger{
+       width: 40px;
+       height: 25px;
+       position:fixed;
+       transition: .5s;
+       display: flex;
+       margin-left: auto;
+     }
+     .hamburger span{
+       position: absolute;
+       width: 100%;
+       height: 1px;
+       background-color: #fff;
+       transition: .5s;
+
+     }
+     .hamburger span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+       top: 0;
+     }
+     .hamburger span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+       top: 50%;
+     }
+     .hamburger span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+       top: 100%;
+     }
+     .slide-menu{
+       position: fixed;
+       top: 65px;
+       width: 100%;
+       left: 0;
+       transform: translateX(100%);
+       transition: .5s;
+       background-color: rgba(255,255,255,0.8);
+
+     }
+     .slide-menu ul{
+       padding-left: 0;
+     }
+     .slide-menu li{
+       color: #fff;
+       line-height: 400%;
+       text-align:center;
+       list-style: none;
+     }
+
+     .slide-menu a{
+       color:#432;
+       padding:10px;
+       display:block;
+     }
+     .slide-menu a:hover{
+       color:#0bd;
+     }
+
+     .hamburger.active{
+       transform: rotateY(360deg);
+     }
+     .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+       top: 50%;
+       transform: rotate(45deg);
+     }
+     .hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+       opacity: 0;/* 透明にする */
+     }
+     .hamburger.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+       top: 50%;
+       transform: rotate(-45deg);
+     }
+     .slide-menu.active{
+       transform: translateX(0);
+     }
+
+.top-body{
+  width:100%;
+  margin:30px auto;
+  text-align: center;
+  color:#009bc6;
+}
+
+.main-content img{margin-bottom: 20px;
+           height: auto;
+           width:1500px;
+           max-width:100%;}
+
+.about-title{font-family:serif;
+             font-size: 40px;
+             color:#fff;}
+
+.about-body {width: 100%;
+             margin: 30px auto;}
+
+.about-box {display: flex;
+            width: 80%;
+            margin: 0 10%;
+            height: 100%;}
+
+.about-img img{float: right;
+            width: 300px;
+            padding: 0 20px 10px 0;}
+
+.kuma-title{font-family:serif;
+            font-size: 40px;
+             color:#fff;}
+
+.item img{width:300px;
+  }
+.wrapper-grid{
+  display:grid;
+  gap:26px;
+  grid-template-columns: repeat(3,minmax(240px,1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+  margin:60px;
+}
+
+.contact-title{font-family:serif;
+             font-size: 40px;
+             color:#fff;}
+
+form{max-width: 290px;
+      margin: 0 auto;}
+form div{
+         padding:15px 0;
+         margin-bottom:30px;}
+label{font-size:1.125rem;
+      margin-bottom:20px;
+      display:block;}
+input[type="text"],
+input[type="email"],
+textarea{background: rgba(255,255,255,.5);
+         border:1px #fff solid;
+         border-radius: 5px;
+         padding: 10px;
+         font-size: 1rem;
+         margin-bottom: 5px;}
+input[type="text"],
+input[type="email"],{
+  width:100%;
+  max-width:240px;}
+textarea{width: 100%;
+        max-width: 480px;
+        height: 6rem;}
+input[type="submit"]{border:none;
+                    cursor:pointer;
+                    line-height:1;
+                    text-align: center;}
+
+.button {font-size: 1.375rem;
+        background: #0bd;
+         color: #fff;
+         border-radius: 5px;
+         padding: 18px 32px;
+         text-align: center;
+         margin:10px;}
+.button:hover{background:#0090aa;}
+
+.footer{
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+}
+.footer p{
+  color:#fff;
+  font-size: 0.875rem;
+}
+
+/*---モバイル版---*/
+@media(max-width:600px){
+  textarea{
+    max-width:100%;
+  }
+}
