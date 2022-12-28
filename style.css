@@ -130,7 +130,7 @@ body{font-family:"Yu Gothic Medium","游ゴシック　Medium",YuGothic,"ヒラ�
 .wrapper-grid{
   display:grid;
   gap:26px;
-  grid-template-columns: repeat(3,minmax(240px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   margin-top: 6%;
   margin-bottom: 50px;
   margin:60px;
@@ -189,7 +189,11 @@ input[type="submit"]{border:none;
 
 /*---モバイル版---*/
 @media(max-width:600px){
+  .page-title {
+      font-size: 2.5rem;
+  }
   textarea{
     max-width:100%;
   }
+  .about-title{margin-top:20%;}
 }
