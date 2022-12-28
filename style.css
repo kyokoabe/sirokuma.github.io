@@ -190,7 +190,7 @@ input[type="submit"]{border:none;
 /*---モバイル版---*/
 @media(max-width:600px){
   .page-title {
-      font-size: 30px;
+      font-size: 20px;
       margin:auto;
   }
   textarea{
@@ -200,5 +200,9 @@ input[type="submit"]{border:none;
   .about-box {display: flex;
               width: 80%;
               margin: 0 10%;}
-.about-img img{width: 300px;}
+.about-img img{
+  float:none;
+  width: 300px;}
+.about-box-text{margin:10px;}
+.top-body{margin:auto;}
 }
