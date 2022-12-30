@@ -12,7 +12,7 @@ body{font-family:"Yu Gothic Medium","游ゴシック　Medium",YuGothic,"ヒラ�
        display: flex;
        justify-content: space-between;
        height: 65px;
-       
+
        align-items: center;
        text-align: center;
      }
@@ -118,9 +118,7 @@ body{font-family:"Yu Gothic Medium","游ゴシック　Medium",YuGothic,"ヒラ�
             height: 100%;}
 
 .about-img img{float: right;
-            width: 300px;
-
-            grid-template-columns: repeat(auto-fit,minmax(240px,1fr));}
+            width: 300px;}
 
 .kuma-title{font-family:serif;
             font-size: 40px;
@@ -204,7 +202,8 @@ input[type="submit"]{border:none;
 .about-img img{
   float:none;
   width: 300px;
-  padding: 0 0 0 0;}
-.about-box-text{margin:10px;}
+  display: block;
+  margin:0 auto;}
+.about-box-text{float: none;}
 .top-body{margin:auto;}
 }
